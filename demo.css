@@ -3,7 +3,7 @@
 
 /* #region Start */
 #slide__start {
-  display: block;
+  /* display: block; */
   /* background-color: red; */
   width: 100vw;
   height: 100vh;
@@ -100,6 +100,13 @@
 
 
 /*----------------------------- definition -----------------------------------------------------*/
+#slide__possible {
+  display: block;
+}
+
+
+
+/*----------------------------- definition -----------------------------------------------------*/
 #slide__definition {
   /* display: block; */
 }
@@ -115,9 +122,12 @@
   /* display: block; */
 }
 
+/* #region table */
+/* #endregion */
+
 /* #region Jazz */
 #slide__jazz {
-  display: block;
+  /* display: block; */
 }
 
 #slide__jazz h1 {
