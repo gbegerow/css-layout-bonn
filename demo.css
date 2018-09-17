@@ -1,0 +1,270 @@
+/* Live demo */
+
+
+/* #region Start */
+#slide__start {
+  display: block;
+  /* background-color: red; */
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  margin: 1ch;
+}
+
+#slide__start article {
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1em auto repeat(3, 0.5em) max-content auto auto;
+  grid-template-rows: max-content 1fr 2fr 1fr repeat(3, 0.5em) 1fr;
+  grid-gap: 1em;
+  transform: rotate(-15deg);
+  margin-left: 7vmax;
+  margin-right: 7vmax;
+}
+
+#slide__start h1 {
+  grid-area: 1 / 2 / 5 / 2;
+  writing-mode: vertical-rl;
+  font-size: xx-large;
+  line-height: 110%;
+  /*5vw;*/
+  /* line-height: 4.1vw; */
+  color: maroon;
+  color: var(--accent-color);
+  margin: 0.1vmax auto;
+}
+
+#slide__start h2 {
+  grid-area: 3 / 6;
+  font-size: x-large;
+  /*3vw;*/
+  /* line-height: 2.7vw; */
+}
+
+#slide__start p {
+  font-size: medium;
+  /*3.2vh / 1.8vh;*/
+  /*240% / 280%; */
+  /* 1.2vw / 1.2vw */
+}
+
+#slide__start #author {
+  grid-area: 8 / 6;
+}
+
+#slide__start #level {
+  grid-area: 8 / 8 / 8 / -1;
+  text-align: center;
+}
+
+#slide__start i {
+  background-color: black;
+}
+
+#slide__start #v1 {
+  grid-column: 3;
+  grid-row: 1 / -1;
+}
+
+#slide__start #v2 {
+  grid-column: 4;
+  grid-row: 1 / -1;
+}
+
+#slide__start #v3 {
+  grid-column: 5;
+  grid-row: 1 / -1;
+  background-color: maroon;
+  background-color: var(--accent-color);
+}
+
+#slide__start #h1 {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  background-color: maroon;
+  background-color: var(--accent-color);
+}
+
+#slide__start #h2 {
+  grid-column: 1 / -1;
+  grid-row: 6;
+}
+
+#slide__start #h3 {
+  grid-column: 1 / -1;
+  grid-row: 7;
+}
+
+/* #endregion */
+
+
+/*----------------------------- definition -----------------------------------------------------*/
+#slide__definition {
+  /* display: block; */
+}
+
+
+/*----------------------------- photos -----------------------------------------------------*/
+#slide__photos {
+  /* display: block; */
+}
+
+/*----------------------------- links -----------------------------------------------------*/
+#slide__links {
+  /* display: block; */
+}
+
+/* #region Jazz */
+#slide__jazz {
+  display: block;
+}
+
+#slide__jazz h1 {
+  font: 72pt/96pt 'Ruslan Display', Georgia, 'Times New Roman', Times, serif;
+}
+
+#slide__jazz h1:nth-child(2n) {
+  color: lightgoldenrodyellow;
+}
+
+#slide__jazz h1:nth-child(2n) {
+  color: lightgoldenrodyellow;
+}
+
+#slide__jazz .sax {
+  font-size: 32vmin;
+  line-height: 44vmin;
+  justify-self: center;
+  display: block;
+  /* transform wirkt nur auf block!*/
+  transform: scale(-1, 1);
+  /* flip */
+}
+
+#slide__jazz .sax:nth-child(2n+1) {
+  transform: scale(0.5, 0.5);
+}
+
+#slide__jazz .sax:nth-child(3n+1) {
+  transform: scale((0.63, 0.63)) translateY();
+}
+
+/* #endregion */
+
+
+/* #region "Employee Of the Month" */
+#slide__EoM {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  overflow: scroll;
+  /* display: inline-flex; */
+  display: grid;
+  display: none;
+  /* grid-template-areas:
+        "a a a a"
+        "a a a a"
+        "a a a a"
+        "a a a a"
+        "b b c c"
+        "b b c c"
+        "d e f g"; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#slide__EoM h1 {
+  /* display: none; */
+  /* grid-area: 5 / 1 / 6 / -1; */
+  color: whitesmoke;
+  background-color: #70777777;
+  font-size: 400%;
+  position: absolute;
+  right: 0;
+  grid-column: -1 / span 3;
+  grid-row: 1 / span 3;
+  z-index: 100;
+}
+
+#slide__EoM .employee {
+  background-color: lightseagreen;
+  /* border: 1px solid darkgreen; */
+  flex: 1;
+  display: grid;
+  /* grid-template-rows: 63% auto auto 1fr; */
+  grid-template-columns: 1fr auto auto repeat(6, 1fr);
+  grid-template-rows: 6fr auto auto 1fr;
+  /* grid-template-rows: 3fr 1fr 1fr 1fr; */
+  /* grid-auto-columns: 100vw; */
+  /* grid-template-rows: [main-start] 1fr ;
+    justify-content: center;
+    align-items: center; */
+  outline: red 1px solid;
+}
+
+/* #slide__EoM .employee * {
+    flex: 1;
+} */
+#slide__EoM .employee img {
+  /* margin: auto auto; */
+  /*width: 220px;
+    height: 290px;
+    flex: 2; */
+  object-fit: cover;
+  grid-column: 1;
+  grid-column: 2 / span 5;
+  grid-row: 1 / -1;
+  /* 1 / 5; */
+  /* grid-area: 1 / 1 / -1 / -1; */
+  /* display: none; */
+}
+
+#slide__EoM .employee p {
+  /* z-index: 2; */
+  /* wird nicht benötigt, da overlap in sourece order */
+  background-color: rgba(223, 219, 219, 0.774);
+  color: black;
+  font-size: 200%;
+  line-height: 120%;
+  padding: 0.6em;
+  grid-column: 1;
+  grid-column: 4 / span 3;
+  grid-row: 2;
+  /* outline: solid 1px white; */
+  text-align: right;
+  text-shadow: rgba(211, 211, 211, 0.7) 1px 1px;
+}
+
+#slide__EoM .employee .moment {
+  grid-column: 1;
+  grid-column: 5 / span 2;
+  grid-row: 3;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#slide__EoM .ofTheMonth {
+  /* grid-area: a; */
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+  background-color: orange;
+  /* font-size: 800%; */
+}
+
+#slide__EoM .recent {
+  /* grid-area: b; */
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 2;
+  background-color: aqua;
+  /* font-size: 400%; */
+}
+
+#slide__EoM .threeMonths {
+  grid-column: 3 / span 2;
+  grid-row: 5 / span 2;
+  /* grid-area: c; */
+  background-color: rgb(0, 255, 64);
+  /* font-size: 400%; */
+}
+
+/* #endregion */

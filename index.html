@@ -1,0 +1,195 @@
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Demo CSS Layout mit Flexbox und Grid">
+    <meta name="author" content="Georg Begerow">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ruslan+Display|Spectral+SC:600" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="demo.css" />
+
+    <title>CSS Layout Demo</title>
+</head>
+
+<body class="dark">
+    <section id="slide__start">
+        <article>
+            <h1>Modern CSS</h1>
+            <h2>Intrinsic Web Design
+                <br />mit Flexbox und Grid</h2>
+
+            <p id="author">Georg Begerow</p>
+            <p id="level">Level 300</p>
+
+            <i id="v1" role="presentation"></i>
+            <i id="v2" role="presentation"></i>
+            <i id="v3" role="presentation"></i>
+            <i id="h1" role="presentation"></i>
+            <i id="h2" role="presentation"></i>
+            <i id="h3" role="presentation"></i>
+        </article>
+    </section>
+
+    <section id="slide__definition">
+        <p>
+            <dl>
+                <dt>Intrinsisch</dt>
+                <dd> (lateinisch intrinsecus „inwendig“ oder „hineinwärts“) bedeutet ursprünglich „innerlich“ oder
+                    „nach
+                    innen gewendet“, in einer späteren Umdeutung auch „von innen her kommend“. Intrinsische
+                    Eigenschaften
+                    gehören zum Gegenstand selbst und machen ihn zu dem, was er ist. </dd>
+            </dl>
+        </p>
+        <p class="source">Wikipedia</p>
+    </section>
+
+    <section id="slide__table">
+
+    </section>
+
+    <section id="slide__jazz">
+        <h1>JaCSS</h1>
+        <i class="sax">🎷</i>
+        <i class="sax">🎷</i>
+        <i class="sax">🎷</i>
+        <i class="sax">🎷</i>
+        <i class="sax">🎷</i>
+    </section>
+
+
+
+    <section id="slide__EoM">
+        <h1>Employe of the Month</h1>
+        <!-- semantisches Layout überarbeiten! -->
+        <!-- components: EmployeeList, Employee, AnimBackground HOC -->
+        <!-- Layout: EotM groß, darunter frühere EotM in einer Zeile
+        1. und 2. Vorgänger 2x2, alle weitern 1x1 in zwei Zeilen
+        Monat und Jahr nur bei ersten 3
+        Falls media zu schmal (eigentlich Container Query), wechsel zu 
+        11
+        11
+        22
+        33
+        45
+        67
+        oder ausblenden und nur 3 aktuellste?
+
+        Background LoL Esports moving background
+        https://davidwalsh.name/multiple-background-css-animations
+        evtl. mit wrapper component für mehrere animation loops, 
+        sonst einfach unterschiedliche Keyframes auf gleicher loop,
+        evtl wiederholte positionen
+        -->
+        <div class="employee ofTheMonth">
+            <img alt="Employee of the Month" src="images/avatare/avatar18.png">
+            <p>Herta Hurtig</p>
+            <div class="moment">May 2018</div>
+        </div>
+        <div class="employee recent ">
+            <img alt="Employee of last Month" src="images/avatare/avatar02.png">
+            <p>Stefan Sauser</p>
+            <div class="moment">April 2018</div>
+        </div>
+        <div class="employee threeMonths">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar15.png">
+            <p>Petra Pesig</p>
+            <div class="moment">March 2018</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar23.png">
+            <p>Wilhelmine Wetze</p>
+            <div class="moment">February 2018</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar25.png">
+            <p>Heiner Hastig</p>
+            <div class="moment">January 2018</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar18.png">
+            <p>Herta Hurtig</p>
+            <div class="moment">December 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+        <div class="employee">
+            <img alt="Former Employee of the Month" src="images/avatare/avatar12.png">
+            <p>Heiner Hurtig</p>
+            <div class="moment">November 2017</div>
+        </div>
+    </section>
+
+    <section style="display:none">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero reiciendis debitis nemo suscipit
+            tempora dicta possimus! Totam consectetur obcaecati est ea officiis debitis. Dolorum odio soluta velit
+            labore doloribus.</p>
+    </section>
+
+    <section id="slide__photos">
+        <img src="photos/alone-child-children-573271.jpg" alt="Photo by Matheus Bertelli from Pexels">
+        <img src="photos/beautiful-blooming-bouquet-1083822.jpg" alt="Photo by Lisa Fotios from Pexels">
+        <img src="photos/acoustic-guitar-adult-entertainer-1403557.jpg" alt="Photo by Ian Vedette Kafuna from Pexels">
+        <img src="photos/cold-frosty-frozen-1417651.jpg" alt="Photo by eberhard grossgasteiger from Pexels">
+        <img src="photos/adult-beautiful-beautiful-girl-1080377.jpg" alt="Photo by Mustafa ezz from Pexels">
+        <img src="photos/adventure-beach-color-1416102.jpg" alt="Photo by Pok Rie from Pexels">
+        <img src="photos/4k-wallpaper-cascade-daylight-1229846.jpg" alt="Photo by Rudolf Kirchner from Pexels">
+        <img src="photos/architectural-design-architecture-buildings-936722.jpg" alt="Photo by Essow  Kedelina from Pexels">
+        <img src="photos/athlete-daytime-fitness-1415811.jpg" alt="Photo by mali maeder from Pexels">
+        <img src="photos/adorable-animal-cat-1404819.jpg" alt="Photo by 侯聪 from Pexels">
+        <img src="photos/art-creative-flying-17679.jpg" alt="Photo by Adrianna Calvo from Pexels">
+        <source>
+    </section>
+
+    <section id="slide__links">
+        <p>Photos from <a href="https://www.pexels.com">pexel.com</a></p>
+    </section>
+</body>
+
+</html>
