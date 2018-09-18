@@ -101,7 +101,6 @@
 
 /* #endregion */
 
-
 /*----------------------------- definition -----------------------------------------------------*/
 #slide__possible {
   /* display: grid; */
@@ -111,8 +110,6 @@
 #slide__tweet {
   /* display: grid; */
 }
-
-
 
 /*----------------------------- definition -----------------------------------------------------*/
 #slide__definition {
@@ -128,7 +125,6 @@
 /* #region site */
 #slide__site {
   /* display: grid; */
-
 }
 
 #slide__site {
@@ -142,7 +138,7 @@
     "footer";
 }
 
-/* @media (min-width: 500px) {
+@media (min-width: 500px) {
   #slide__site {
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
@@ -156,9 +152,9 @@
     display: flex;
     justify-content: space-between;
   }
-} */
+}
 
-/* @media (min-width: 700px) {
+@media (min-width: 700px) {
   #slide__site {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
@@ -171,8 +167,7 @@
   #slide__site nav ul {
     flex-direction: column;
   }
-} */
-
+}
 
 #slide__site header {
   grid-area: header;
@@ -198,9 +193,12 @@
   grid-area: footer;
 }
 
-
 /* #endregion */
 
+/*----------------------------- free -----------------------------------------------*/
+#slide__free {
+  /* display: block; */
+}
 
 /*----------------------------- photos -----------------------------------------------------*/
 /* #region photos */
@@ -228,7 +226,7 @@
 }
 
 #slide__jazz h1 {
-  font: 72pt/96pt 'Ruslan Display', Georgia, 'Times New Roman', Times, serif;
+  font: 72pt/96pt "Ruslan Display", Georgia, "Times New Roman", Times, serif;
 }
 
 #slide__jazz h1:nth-child(2n) {
@@ -249,16 +247,15 @@
   /* flip */
 }
 
-#slide__jazz .sax:nth-child(2n+1) {
+#slide__jazz .sax:nth-child(2n + 1) {
   transform: scale(0.5, 0.5);
 }
 
-#slide__jazz .sax:nth-child(3n+1) {
+#slide__jazz .sax:nth-child(3n + 1) {
   transform: scale((0.63, 0.63)) translateY();
 }
 
 /* #endregion */
-
 
 /* #region "Employee Of the Month" */
 #slide__EoM {
@@ -390,8 +387,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
 }
 
