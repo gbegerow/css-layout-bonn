@@ -1,9 +1,18 @@
 # css-layout-bonn
-"Folien" und Code vom Vortrag Intrinsic Web Design vom Webmontag Bonn (17.09.2018)
-==================================================================================
 
-Links zu diversen Referenzen
-----------------------------
+# "Folien" und Code vom Vortrag Intrinsic Web Design vom Webmontag Bonn (17.09.2018)
+
+## Struktur
+
+Die einzelnen Folien sind als section implementiert. Sections sind standardmäßig auf display: none gestellt.
+Um eine Folie einzublenden, in demo.css das display für die aktuelle Folie auskommentieren und für die gewünschte Folie den display code aktivieren.
+
+## Tip
+
+Beim Vortrag wurde VS Code genutzt zusammen mit dem Plugin "VSCode Browser Sync"
+Dadurch ist kein externes Buildfile notwendig.
+
+## Links zu diversen Referenzen
 
 MDN Referenz Grid und Flexbox
 
@@ -16,6 +25,7 @@ MDN Referenz Grid und Flexbox
 </ul>
 
 Artikel von Rachel Andrews
+
 <ul>
     <li><a href="https://www.smashingmagazine.com/2018/05/guide-css-layout/" rel="noopener noreferrer">Getting
             Started With CSS Layout</a></li>
@@ -41,6 +51,7 @@ Videos/Präsentationen von Jen Simmons
 </ul>
 
 Diverses
+
 <ul>
   <li><a href="https://www.vignelli.com/canon.pdf" rel="noopener noreferrer">The Vignelli Canon</a></li>
   <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></li>
